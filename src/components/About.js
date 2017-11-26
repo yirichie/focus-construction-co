@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="hero-section">
+        <div className="about-section white-text">
             <p>
                 Focus Construction Co. is a general builder and construction
                 management company with operations primarily in the Commercial
