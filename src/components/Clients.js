@@ -8,7 +8,7 @@ const Clients = () => {
                 return <div key={client.name}>{client.name}</div>;
             });
             return (
-                <div className="white-text" key={industry.type}>
+                <div key={industry.type}>
                     <h5>{industry.type}</h5>
                     {clients}
                 </div>
