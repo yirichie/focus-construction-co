@@ -1,14 +1,14 @@
 import React from 'react';
-import Link from 'gatsby-link';
 
 import Hero from '../components/Hero';
 import About from '../components/About';
+import Clients from '../components/Clients';
 
 const IndexPage = () => (
     <div>
         <Hero />
         <About />
-        <Link to="/page-2/">Go to page 2</Link>
+        <Clients />
     </div>
 );
 
