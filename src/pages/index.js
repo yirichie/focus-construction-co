@@ -5,13 +5,6 @@ import About from '../components/About';
 import Clients from '../components/Clients';
 import Contact from '../components/Contact';
 
-const IndexPage = () => (
-    <div>
-        <Hero />
-        <About />
-        <Clients />
-        <Contact />
-    </div>
-);
+const IndexPage = () => <div />;
 
 export default IndexPage;
