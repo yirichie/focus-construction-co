@@ -17,9 +17,10 @@
     padding: 20%;
 }
 .clients-section {
-    /* background: url('../images/hero.jpg') no-repeat center center;
-    background-size: cover; */
+    background: url('../images/hero.jpg') no-repeat center center;
+    background-size: cover;
     height: 100vh;
-    padding: 20%;
-    background: orange;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
