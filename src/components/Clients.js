@@ -3,13 +3,13 @@ import clientList from '../clientList';
 
 const Clients = () => {
     const renderList = () => {
-        return clientList.map(industry => {
-            const clients = industry.data.map(client => {
-                return <div key={client.name}>{client.name}</div>;
+        return clientList.map(({ type, data }) => {
+            const clients = data.map(({ name }) => {
+                return <div key={name}>{name}</div>;
             });
             return (
-                <div key={industry.type}>
-                    <h5>{industry.type}</h5>
+                <div key={type}>
+                    <h5>{type}</h5>
                     {clients}
                 </div>
             );

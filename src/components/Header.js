@@ -7,29 +7,21 @@ const Header = () => {
             <div className="nav-wrapper header #f5f5f5">
                 <ul className="left hide-on-med-and-down">
                     <li>
-                        <a href="sass.html">
-                            <i className="material-icons">info</i>
-                        </a>
+                        <Link to="/about">About</Link>
                     </li>
                     <li>
-                        <a href="badges.html">
-                            <i className="material-icons">view_module</i>
-                        </a>
+                        <Link to="/portfolio">Portfolio</Link>
                     </li>
                 </ul>
-                <a href="/" className="brand-logo center">
+                <Link className="brand-logo center" to="/">
                     Focus Construction
-                </a>
+                </Link>
                 <ul className="right hide-on-med-and-down">
                     <li>
-                        <a href="sass.html">
-                            <i className="material-icons">info</i>
-                        </a>
+                        <Link to="/clients">Clients</Link>
                     </li>
                     <li>
-                        <a href="badges.html">
-                            <i className="material-icons">view_module</i>
-                        </a>
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </div>
