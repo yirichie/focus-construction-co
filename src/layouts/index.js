@@ -3,19 +3,14 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import 'materialize-css/dist/css/materialize.min.css';
 
+import siteData from '../siteData';
 import Header from '../components/Header';
 
 import './index.css';
 
 const TemplateWrapper = ({ children }) => (
     <div>
-        <Helmet
-            title="Gatsby Default Starter"
-            meta={[
-                { name: 'description', content: 'Sample' },
-                { name: 'keywords', content: 'sample, something' }
-            ]}
-        />
+        <Helmet title={siteData.title} meta={siteData.meta} />
         <link
             href="https://fonts.googleapis.com/css?family=Roboto+Mono"
             rel="stylesheet"
