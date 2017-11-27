@@ -5,31 +5,48 @@ body {
 img {
     width: 100%;
 }
+a {
+    color: black;
+    text-decoration: underline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.logo {
+    width: 100px;
+}
 .header {
-    position: fixed;
+    height: 25vh;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero-section {
-    height: 100vh;
+    height: 75vh;
+    padding: 5% 25% 5% 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .about-section {
+    height: 75vh;
+    padding: 5% 25% 5% 25%;
     text-align: center;
     line-height: 1.75em;
-    height: 100vh;
-    padding: 20%;
 }
 .clients-section {
-    height: 100vh;
-    padding: 5%;
+    padding: 5% 20% 5% 20%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio-section {
+    padding: 5% 25% 5% 25%;
 }
 .contact-section {
-    height: 100vh;
-    padding: 20%;
+    height: 75vh;
+    padding: 5% 25% 5% 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;

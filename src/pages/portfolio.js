@@ -7,7 +7,7 @@ import bobaLoca from '../images/boba-loca.jpg';
 
 const Portfolio = () => {
     return (
-        <div>
+        <div className="portfolio-section">
             <img src={hMart} alt="" className="portfolio-img" />
             <img src={parisBaguette} alt="" className="portfolio-img" />
             <img src={kyochon} alt="" className="portfolio-img" />
