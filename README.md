@@ -1,4 +1,5 @@
-# Focus Construction Co.
+# Portfolio
 
-Focus Construction Co's website built with
-[Gatsby.js](https://www.gatsbyjs.org/).
+Website built for [Focus Construction Co.](http://focusconstructionla.com) with
+[Gatsby.js](https://www.gatsbyjs.org) and
+[Materialize](http://www.materializecss.com).

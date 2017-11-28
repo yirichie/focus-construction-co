@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Gatsby Default Starter',
+    title: 'Focus Construction Co.',
     meta: [
         {
             name: 'description',
