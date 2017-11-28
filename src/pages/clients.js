@@ -5,12 +5,12 @@ const Clients = () => {
     const renderList = () => {
         return clientList.map(({ type, data }) => {
             const clients = data.map(({ name }) => {
-                return <div key={name}>{name}</div>;
+                return <li key={name}>{name}</li>;
             });
             return (
-                <div key={type}>
+                <div className="clients-column" key={type}>
                     <h5>{type}</h5>
-                    {clients}
+                    <ul>{clients}</ul>
                 </div>
             );
         });

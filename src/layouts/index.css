@@ -5,50 +5,112 @@ body {
 img {
     width: 100%;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: darkorange;
+}
+li {
+    line-height: 1.75em;
+}
 a {
     color: black;
     text-decoration: underline;
     margin-left: 5px;
     margin-right: 5px;
 }
+a:hover {
+    color: darkorange;
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.75em;
+}
 .logo {
     width: 100px;
 }
 .header {
-    height: 25vh;
-    border: solid;
+    height: 30vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section,
+.about-section,
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .hero-section {
-    height: 75vh;
-    padding: 5% 25% 5% 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0% 25% 10% 25%;
 }
 .about-section {
-    height: 75vh;
-    padding: 5% 25% 5% 25%;
+    margin: 0% 25% 10% 25%;
     text-align: center;
     line-height: 1.75em;
 }
+.contact-section {
+    margin: 0% 25% 10% 25%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact-column p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.contact-header {
+    font-weight: bold;
+}
 .clients-section {
-    padding: 5% 20% 5% 20%;
+    margin: 0% 25% 10% 25%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.portfolio-section {
-    padding: 5% 25% 5% 25%;
+.clients-column {
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.contact-section {
-    height: 75vh;
-    padding: 5% 25% 5% 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.portfolio-section {
+    margin: 0% 25% 10% 25%;
+}
+@media screen and (max-width: 1224px) {
+    .about-section,
+    .contact-section,
+    .portfolio-section {
+        margin: 0% 20% 10% 20%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .about-section,
+    .contact-section,
+    .portfolio-section {
+        margin: 0% 15% 10% 15%;
+    }
+    .clients-column,
+    .contact-column {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 414px) {
+    .about-section,
+    .contact-section,
+    .portfolio-section {
+        margin: 0% 10% 10% 10%;
+    }
 }
