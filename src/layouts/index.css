@@ -17,7 +17,6 @@ li {
 }
 a {
     color: black;
-    text-decoration: underline;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -28,6 +27,8 @@ p {
     font-size: 1.1em;
     line-height: 1.75em;
 }
+
+/* MAIN SECTION */
 .logo {
     width: 100px;
 }
@@ -51,12 +52,32 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+/* HEADER SECTION */
 .header {
     height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.header-nav {
+    display: flex;
+    justify-content: center;
+}
+.header-nav a {
+    font-size: 1.3em;
+    border-bottom: solid 1px;
+}
+.nav-left a {
+    padding-right: 50px;
+    margin-right: 10px;
+}
+.nav-right a {
+    padding-left: 50px;
+    margin-left: 10px;
+}
+
+/* OTHER SECTIONS */
 .hero-section,
 .about-section,
 .portfolio-section {
@@ -109,6 +130,11 @@ p {
 .portfolio-section {
     margin: 0% 25% 10% 25%;
 }
+.portfolio-section img {
+    margin-bottom: 25px;
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 1224px) {
     .about-section,
     .contact-section,
@@ -128,9 +154,26 @@ p {
     .main-section {
         margin: 0% 20% 10% 20%;
     }
-    .clients-column,
-    .contact-column {
+    .clients-column {
         width: 100%;
+    }
+    .header-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+    }
+    .header-nav a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-bottom: none;
+    }
+    .nav-left a {
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    .nav-right a {
+        padding-left: 0px;
+        margin-left: 0px;
     }
 }
 @media screen and (max-width: 414px) {
@@ -141,5 +184,8 @@ p {
     }
     .main-section {
         margin: 0% 15% 10% 15%;
+    }
+    .contact-column {
+        width: 100%;
     }
 }
