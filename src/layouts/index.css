@@ -31,6 +31,26 @@ p {
 .logo {
     width: 100px;
 }
+.main-section {
+    text-align: center;
+    margin: 0% 30% 10% 30%;
+}
+.main-section h4,
+.main-section h5 {
+    color: black;
+}
+.main-text {
+    color: black;
+    margin-bottom: 80px;
+}
+.main-icon-section {
+    display: flex;
+    justify-content: space-around;
+}
+.main-column {
+    display: flex;
+    flex-direction: column;
+}
 .header {
     height: 30vh;
     display: flex;
@@ -95,12 +115,18 @@ p {
     .portfolio-section {
         margin: 0% 20% 10% 20%;
     }
+    .main-section {
+        margin: 0% 25% 10% 25%;
+    }
 }
 @media screen and (max-width: 768px) {
     .about-section,
     .contact-section,
     .portfolio-section {
         margin: 0% 15% 10% 15%;
+    }
+    .main-section {
+        margin: 0% 20% 10% 20%;
     }
     .clients-column,
     .contact-column {
@@ -112,5 +138,8 @@ p {
     .contact-section,
     .portfolio-section {
         margin: 0% 10% 10% 10%;
+    }
+    .main-section {
+        margin: 0% 15% 10% 15%;
     }
 }
