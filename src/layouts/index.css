@@ -46,7 +46,7 @@ p {
 }
 .main-icon-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .main-column {
     display: flex;
